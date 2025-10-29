@@ -32,7 +32,7 @@ export default function Home() {
           <Link
             key={name}
             href={href}
-            className={`w-full py-1.5 border-1 border-[#dedede1a] bg-[#dedede08] hover:bg-[#dedede24] transition-colors text-center ${index !== LINKS.length - 1 ? " mb-1.5" : ""}`}
+            className={`w-full py-1.5 border-1 border-[#dedede1a] bg-[#dedede08] hover:bg-[#dedede24] transition-colors text-center ${index !== LINKS.length - 1 ? "mb-1.5" : ""}`}
             target="_blank" rel="noopener noreferrer"
           >
             {name}
