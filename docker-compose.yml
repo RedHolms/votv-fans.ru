@@ -14,3 +14,7 @@ services:
       - "10000"
     networks:
       - proxy_default
+
+networks:
+  proxy_default:
+    external: true
