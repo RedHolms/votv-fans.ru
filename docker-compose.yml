@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  nextapp:
+    build: .
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=votv-fans.ru
+      - LETSENCRYPT_HOST=votv-fans.ru
+      - LETSENCRYPT_EMAIL=arseny.saw4enko@gmail.com
+    expose:
+      - "10000"
