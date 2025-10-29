@@ -9,5 +9,8 @@ services:
       - VIRTUAL_HOST=votv-fans.ru
       - LETSENCRYPT_HOST=votv-fans.ru
       - LETSENCRYPT_EMAIL=arseny.saw4enko@gmail.com
+      - VIRTUAL_PORT=10000
     expose:
       - "10000"
+    networks:
+      - proxy_default
